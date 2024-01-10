@@ -99,12 +99,19 @@
 
 - i highly recommend to read that because there is a lot of useful  information.
 
+- please click the start attack box to start the virtual machine and click the split button to split the screen.
+
+- ![tryhackme snort](https://github.com/yakkalasaisumanth/project-on-IDS-IPS-using-snort/blob/main/images/snort%201.png)
+
 ## task 2 consists of general information regarding the snort 2.
 
 1. Navigate to the Task-Exercises folder and run the command "./.easy.sh" and write the output
 ```
 sudo ./.easy.sh
 ```
+
+- ![tryhackme snort1](https://github.com/yakkalasaisumanth/project-on-IDS-IPS-using-snort/blob/main/images/first%20answer.png)
+
 - use the above command to answer the question.
 
 ## task 3 consists of the IDS, IPS, HIDS, HIPS, NIPS & NIDS. and the modes of the snort nad the rules based, etc,.
@@ -177,6 +184,8 @@ sudo snort -version
 149
 ```
 
+- ![tryhackme snort20](https://github.com/yakkalasaisumanth/project-on-IDS-IPS-using-snort/blob/main/images/snort%20version.png)
+
 2. Test the current instance with "/etc/snort/snort.conf" file and check how many rules are loaded with the current build.
 
 - command
@@ -189,6 +198,10 @@ sudo snort -c /etc/snort/snort.conf -T
 4151
 ```
 
+- ![snort rules](https://github.com/yakkalasaisumanth/project-on-IDS-IPS-using-snort/blob/main/images/snort%20rules.png)
+
+- ![snort commands](https://github.com/yakkalasaisumanth/project-on-IDS-IPS-using-snort/blob/main/images/snort%20basic%20commands.png)
+
 3. Test the current instance with "/etc/snort/snortv2.conf" file and check how many rules are loaded with the current build.
 
 - command
@@ -200,6 +213,8 @@ sudo snort -c /etc/snort/snortv2.conf -T
 ```
 1
 ```
+
+- ![snort2 rule](https://github.com/yakkalasaisumanth/project-on-IDS-IPS-using-snort/blob/main/images/snort%20rules%201.png)
 
 ## Task 5 Operation mode 1. sniffer mode.
 
@@ -215,6 +230,8 @@ sudo snort -c /etc/snort/snortv2.conf -T
 3. |-e              |Display the link-layer (TCP/IP/UDP/ICMP) headers.| 
 4. |-X              |Display the full packet details in HEX.|
 5. |-i              |This parameter helps to define a specific network interface to listen/sniff. Once you have multiple interfaces, you can choose a specific interface to sniff. |
+
+
 
 - Note that you can use the parameters both in combined and separated form as follows;
 ```
@@ -251,6 +268,8 @@ sudo snort -r logname.log icmp
 sudo snort -r logname.log tcp
 sudo snort -r logname.log 'udp and port 53'
 ```
+
+- ![snort vmimg](https://github.com/yakkalasaisumanth/project-on-IDS-IPS-using-snort/blob/main/images/snort%20vm%20and%20folder.png)
 
 1. Investigate the traffic with the default configuration file with ASCII mode.
 
@@ -304,6 +323,8 @@ sudo snort -r snort.log.1640048004 -x -n4
 http://www.ethereal.com/development.html
 ```
 
+- ![snort reffer](https://github.com/yakkalasaisumanth/project-on-IDS-IPS-using-snort/blob/main/images/snort%20referer.png)
+
 4. Read the "snort.log.1640048004" file with Snort; what is the Ack number of the 8th packet?
 
 - command
@@ -347,6 +368,8 @@ sudo snort -r snort.log.1640048004 tcp
 8. | -A          |console: Provides fast style alerts on the console|
 9. | -A          |cmg: CMG style, basic header details with payload|
 10. | -A         | none: Disabling alerting|
+
+- ![snort rule1](https://github.com/yakkalasaisumanth/project-on-IDS-IPS-using-snort/blob/main/images/snort%20rules%20description.png)
 
 - Basic snort rule of blocking the ICMP traffic example of snort rule.
 ```
